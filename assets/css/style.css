@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Web Site body part with a picture background */
 body {
   font-family: Arial;
   margin: 0;
@@ -25,6 +26,7 @@ header {
   color: #fff;
 }
 
+/* Hong Kong picture is the page banner */
 .banner {
   height: 300px;
   width: 100%;
@@ -34,6 +36,7 @@ header {
   background-position: center;
 }
 
+/* place the text in the banner top center */
 .centered {
   position: absolute;
   top: 10%;
@@ -57,6 +60,7 @@ nav a {
   text-align: center;
 }
 
+/* paragraph font size */
 p {
   font-size: 24px;
 }
@@ -69,13 +73,14 @@ footer {
   margin-top: auto;
 }
 
+/* portfolio section setting */
 .portfolio {
   display: flex;
   /* Align the child elements to the top of the parent */
   align-items: flex-start;
   width: 90%;
   margin: 1% auto;
-  background-color: rgb(205, 244, 214);
+  background-color: #e9fff3;
 }
 
 .portfolio-image {
@@ -87,15 +92,18 @@ footer {
   flex: 0 0 60%;
 }
 
+/* Work sectonsettings */
 .myworks {
   display: flex;
   /* Align the child elements to the top of the parent */
   align-items: flex-start;
   width: 90%;
   margin: 2% auto;
+  /* images are in the same row */
   flex-direction: row;
 }
 
+/* create a border box */
 .work-section {
   border: 2px solid black;
   border-color: rgb(90, 44, 44);
@@ -103,6 +111,7 @@ footer {
   background-color: rrgb(150, 200, 162);
 }
 
+/* place a text at the top of the border */
 .titlebox {
 	float:left;
 	padding: 0 10px;
@@ -110,6 +119,7 @@ footer {
 	background:rrgb(150, 200, 162);
 }
 
+/* create border box to contain a image */
 .imageboxcontainer {
   margin-left: 2%;
   padding: 0 10px;
@@ -126,11 +136,13 @@ footer {
   transition: 0.6s;
 }
 
+/* when a mouse is hovering, the image will expand */
 .application-image:hover {
   transform: scale(1.1);
   transition: 0.6s;
 }
 
+/* Contact me section settings */
 .contact {
   display: flex;
   /* Align the child elements to the top of the parent */
@@ -144,6 +156,7 @@ footer {
   flex: 0 0 60%;
 }
 
+/* allow the page content to be adjusted whnnever the page is expanded or shrunk */
 @media screen and (max-width: 768px) {
   main,
    .work-section
