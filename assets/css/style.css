@@ -39,7 +39,7 @@ header {
 /* place the text in the banner top center */
 .centered {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 48px;
@@ -49,9 +49,9 @@ header {
 nav {
   display: flex;
   /* Align the child elements to the right side of the parent */
-  justify-content: flex-end;
+  justify-content:flex-start;
   background-color: #d8a47f;
-}
+  }
 
 nav a {
   color: #13293d;
@@ -154,15 +154,20 @@ footer {
 .contact-details {
   margin-left: 3%;
   flex: 0 0 60%;
+  color: white;
 }
 
 /* allow the page content to be adjusted whnnever the page is expanded or shrunk */
 @media screen and (max-width: 768px) {
   main,
-  nav,
    .work-section
   {
     flex-direction: column;
+  }
+
+  nav
+   {
+    flex-direction: row;
   }
 
   .portfolio-details, .titlebox, .contact-details {
