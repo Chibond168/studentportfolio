@@ -146,8 +146,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   main,
-  nav,
-  .work-section
+   .work-section
   {
     flex-direction: column;
   }
