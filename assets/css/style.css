@@ -159,6 +159,7 @@ footer {
 /* allow the page content to be adjusted whnnever the page is expanded or shrunk */
 @media screen and (max-width: 768px) {
   main,
+  nav,
    .work-section
   {
     flex-direction: column;
