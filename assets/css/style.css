@@ -13,17 +13,32 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  background-size:cover;
+  background-image: url("../images/vectorgreen.jpg");
 
 }
 
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
+  background: #214466;
   color: #fff;
 }
 
-.h1 {
+.banner {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-image: url("../images/hongkong.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 48px;
   font-style: italic;
 }
@@ -42,10 +57,14 @@ nav a {
   text-align: center;
 }
 
+p {
+  font-size: 24px;
+}
+
 footer {
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: #214466;
   color: #fff;
   margin-top: auto;
 }
@@ -56,10 +75,11 @@ footer {
   align-items: flex-start;
   width: 90%;
   margin: 1% auto;
+  background-color: rgb(205, 244, 214);
 }
 
 .portfolio-image {
-  width: 50%;
+  width: 90%;
 }
 
 .portfolio-details {
@@ -67,15 +87,35 @@ footer {
   flex: 0 0 60%;
 }
 
+.myworks {
+  display: flex;
+  /* Align the child elements to the top of the parent */
+  align-items: flex-start;
+  width: 90%;
+  margin: 2% auto;
+  flex-direction: row;
+}
+
 .work-section {
-  border: 1px solid black;
+  border: 2px solid black;
+  border-color: rgb(90, 44, 44);
+  border-style:dotted;
+  background-color: rrgb(150, 200, 162);
 }
 
 .titlebox {
 	float:left;
-	padding:0 5px;
+	padding: 0 10px;
 	margin:-30px 0 0 30px;
-	background:#fff;
+	background:rrgb(150, 200, 162);
+}
+
+.imageboxcontainer {
+  margin-left: 2%;
+  padding: 0 10px;
+  border: 2px solid black;
+  border-style:none;
+  text-align: center;
 }
 
 .application-image {
@@ -91,7 +131,18 @@ footer {
   transition: 0.6s;
 }
 
+.contact {
+  display: flex;
+  /* Align the child elements to the top of the parent */
+  align-items: flex-start;
+  width: 90%;
+  margin: 1% auto;
+}
 
+.contact-details {
+  margin-left: 3%;
+  flex: 0 0 60%;
+}
 
 @media screen and (max-width: 768px) {
   main,
@@ -101,7 +152,7 @@ footer {
     flex-direction: column;
   }
 
-  .portfolio-details, .titlebox, {
+  .portfolio-details, .titlebox, .contact-details {
     margin-left: 0;
   }
 }
